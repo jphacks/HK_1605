@@ -36,9 +36,8 @@
 </head>
 
 <body>
-    <ons-navigator var="myNavigator">
         <ons-splitter ng-controller="AppController as app" var="splitter">
-            <ons-splitter-side side="left" width="220px" collapse swipeable>
+            <ons-splitter-side side="left" width="220px" collapse swipeable var="myNavigator">
                 <ons-page>
                     <ons-list>
                         <ons-list-item ng-click="app.load('home.html')" tappable>ホーム <br/></ons-list-item>
@@ -49,7 +48,6 @@
             </ons-splitter-side>
             <ons-splitter-content page="home.html"></ons-splitter-content>
         </ons-splitter>
-    </ons-navigator>
 </body>
 
 </html>
