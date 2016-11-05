@@ -58,18 +58,24 @@
 
 
 <body>
-        <ons-splitter ng-controller="AppController as app" var="splitter">
-            <ons-splitter-side side="left" width="220px" collapse swipeable>
-                <ons-page>
-                    <ons-list>
-                        <ons-list-item ng-click="app.load('home.html')" tappable>ホーム <br/></ons-list-item>
-                        <ons-list-item ng-click="app.load('settings.html')" tappable> 出品したノート </ons-list-item>
-                        <ons-list-item ng-click="app.load('about.html')" tappable> 購入したノート </ons-list-item>
-                    </ons-list>
-                </ons-page>
-            </ons-splitter-side>
-            <ons-splitter-content page="home.html"></ons-splitter-content>
-        </ons-splitter>
+    <ons-splitter ng-controller="AppController as app" var="splitter">
+        <ons-splitter-side side="left" width="220px" collapse swipeable var="myNavigator">
+            <ons-page>
+                <ons-list>
+                    <ons-list-item>
+                    <img src="enpitsu.png" width="12%" height="55%" style="position:absolute;left:190px;top:15px">
+                    <img src="logo.png" width="190px" height="60px" style="position:relative;left:-10px">
+                    </ons-list-item>
+                <font　size="10">
+                    <ons-list-item ng-click="app.load('home.html')" tappable> <ons-icon icon="ion-ios-home-outline" size="32px, material:24px"></ons-icon>　ホーム</ons-list-item>
+                    <ons-list-item ng-click="app.load('sell.html')" tappable> <ons-icon icon="ion-compose" size="32px, material:24px"></ons-icon>　出品したノート </ons-list-item>
+                    <ons-list-item ng-click="app.load('buy.html')" tappable><ons-icon icon="ion-clipboard" size="32px, material:24px"></ons-icon>　購入したノート </ons-list-item>
+                    </font>
+                </ons-list>
+            </ons-page>
+        </ons-splitter-side>
+        <ons-splitter-content page="home.html"></ons-splitter-content>
+    </ons-splitter>
 </body>
 
 </html>

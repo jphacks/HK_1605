@@ -44,8 +44,6 @@ function decoding(){
 	document.getElementById("img3").src = codelist[3].code;
 	document.getElementById("img4").src = codelist[4].code;
 	document.getElementById("img5").src = codelist[5].code;
-	document.getElementById("img6").src = codelist[6].code;
-	document.getElementById("img7").src = codelist[7].code;
 	decode.src = imageurl;
 	//document.getElementById("textArea").value = codelist[0].code;
 	modal.hide();
