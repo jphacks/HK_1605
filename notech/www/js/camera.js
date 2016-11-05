@@ -46,7 +46,6 @@ function decoding(){
 	document.getElementById("img5").src = codelist[5].code;
 	decode.src = imageurl;
 	//document.getElementById("textArea").value = codelist[0].code;
-	modal.hide();
 }
 
 function makeSmall(data) {
@@ -68,4 +67,34 @@ function makeSmall(data) {
   // JPEG形式のほうが良い圧縮率が得られると思われます。
   // 第2引数は品質レベルで、0.0~1.0の間の数値です。高いほど高品質。
   // return canvas.toDataURL("image/jpeg", 0.5);
+}
+
+function goto_detail0() {
+	imageurl = document.getElementById("img0").src;
+	myNavigator.pushPage('detail.html');
+}
+
+function goto_detail1() {
+	imageurl = document.getElementById("img1").src;
+	myNavigator.pushPage('detail.html');
+}
+
+function goto_detail2() {
+	imageurl = document.getElementById("img2").src;
+	myNavigator.pushPage('detail.html');
+}
+
+function goto_detail3() {
+	imageurl = document.getElementById("img3").src;
+	myNavigator.pushPage('detail.html');
+}
+
+function goto_detail4() {
+	imageurl = document.getElementById("img4").src;
+	myNavigator.pushPage('detail.html');
+}
+
+function goto_detail5() {
+	imageurl = document.getElementById("img5").src;
+	myNavigator.pushPage('detail.html');
 }
