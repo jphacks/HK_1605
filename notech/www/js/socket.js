@@ -1,16 +1,16 @@
-var socket = io.connect();
-
-socket.on("test_back", function(data){
-    appendMsg(data);
+var url = "https://mnnm.herokuapp.com/";
+var socket = io.connect(url);
+socket.on("connection", function(){
+    socket.on("encode_back", function(data){
+        alert(data);
+    });
 });
 
 function appendMsg(data) {
     $("#chatLogs").append("<div>" + data + "</div>");
 }
 
-$("form").submit(function(e){
-    var message= $("#msgForm").val();
-    $("#msgForm").val('');
-    socket.emit("test", message);
-    e.preventDefault();
-});
+function send_png(img){
+    socket.emit("encode", img);
+    //e.preventDefault();
+}
