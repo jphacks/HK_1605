@@ -25,8 +25,9 @@ function snapPicture () {
 		//var target = document.getElementById("textArea");
 		//target.value = makeSmall(imageData);
 		imageurl = makeSmall(imageData);
-		send_png(imageurl);
+		//send_png(imageurl);
 		//alert(smallurl);
+		myNavigator.pushPage("edit.html",{imageurl:imageurl});
 	}
 
 	//A callback function when snapping picture is fail.
@@ -37,7 +38,17 @@ function snapPicture () {
 
 function decoding(){
 	var decode = document.getElementById("decode");
+	document.getElementById("img0").src = codelist[0].code;
+	document.getElementById("img1").src = codelist[1].code;
+	document.getElementById("img2").src = codelist[2].code;
+	document.getElementById("img3").src = codelist[3].code;
+	document.getElementById("img4").src = codelist[4].code;
+	document.getElementById("img5").src = codelist[5].code;
+	document.getElementById("img6").src = codelist[6].code;
+	document.getElementById("img7").src = codelist[7].code;
 	decode.src = imageurl;
+	//document.getElementById("textArea").value = codelist[0].code;
+	modal.hide();
 }
 
 function makeSmall(data) {
@@ -49,7 +60,7 @@ function makeSmall(data) {
 
   // 縮小する。今回は縦横それぞれ1/2
   var canvas = document.createElement("canvas");
-  var n = 10;
+  var n = 10;//ここは10
   canvas.width = width / n;
   canvas.height = height / n;
   canvas.getContext("2d").drawImage(image, 0, 0, width / n, height / n);

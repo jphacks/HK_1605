@@ -33,17 +33,31 @@
             });
         ons.ready(function()
         {
-            console.log("Onsen UI is ready!");
+            //console.log("Onsen UI is ready!");
         });
     </script>
 
     <script src="js/camera.js"></script>
     <script src="js/socket.js"></script>
+    <script src="js/edit.js"></script>
+    <script src="js/home.js"></script>
+
+    <script>
+    modal.show();
+    setTimeout('decoding()', 6000);
+        socket.emit("list");
+        //alert("sleep 2 seconds");
+        setTimeout(function () {
+            socket.on("list_back", function(data){
+                codelist = data;
+            });
+        }, 2000);
+        //alert("wake up!");
+    </script>
 </head>
 
 
 <body>
-    <ons-navigator var="myNavigator">
         <ons-splitter ng-controller="AppController as app" var="splitter">
             <ons-splitter-side side="left" width="220px" collapse swipeable>
                 <ons-page>
@@ -56,7 +70,6 @@
             </ons-splitter-side>
             <ons-splitter-content page="home.html"></ons-splitter-content>
         </ons-splitter>
-    </ons-navigator>
 </body>
 
 </html>
