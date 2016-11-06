@@ -31,14 +31,14 @@ Mnnmのメンバーはそれによって落としてしまった単位の数が�
 ## 開発技術
 ### 活用した外部技術
 #### API・データ
-・heroku
-・OCR　tesseract.js
-・形態素解析　kuromoji
+* heroku
+* OCR　tesseract.js
+* 形態素解析　kuromoji
 
 #### フレームワーク・ライブラリ・モジュール
-・jQuery
-・onsenui
-・monaca
+* jQuery
+* onsenui
+* monaca
 
 #### デバイス
 ・現在はiPhone6/6sに対応
