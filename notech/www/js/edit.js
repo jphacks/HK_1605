@@ -24,8 +24,8 @@ function emit_note_info(){
         messageHTML:"送信しました",
         buttonLabel:"OK",
         callback:function(){
-            myNavigator.popPage();
-            myNavigator.replacePage("home.html");
+            //myNavigator.popPage();
+            //myNavigator.replacePage("home.html");
         }
     });
 }
