@@ -1,10 +1,13 @@
 <ons-page id="edit_page">
     <ons-toolbar>
-
+        <div class="left">
             <ons-back-button>back</ons-back-button>
+        </div>
             <div class="center">情報入力</div>
-        </ons-toolbar>
-        <img src="" id="edit_img" width="180" height="320"><br>
+    </ons-toolbar>
+    <div class="center">
+        <img src="" id="edit_img" width="210" height="280"><br>
+    </div>
         科目名
         <select name="科目名" id="course">
                 <option value="">選択してください</option>
@@ -14,7 +17,7 @@
                 <option value="3">ネットワークセキュリティ</option>
                 <option value="4">ハードウェア設計論</option>
                 <option value="5">オペレーティング・システム</option>
-        </select>
+        </select><br>
 
         <ons-button onclick="emit_note_info()">送信</ons-button>
     </ons-page>

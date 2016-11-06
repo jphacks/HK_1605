@@ -34,7 +34,7 @@
         ons.ready(function()
         {
             //console.log("Onsen UI is ready!");
-            modal.show();
+            //modal.show();
         });
     </script>
 
@@ -51,15 +51,14 @@
         <br>Please wait for some seconds.
     </ons-modal>
     <script>
-        socket.emit("list");
-        //alert("sleep 2 seconds");
-        setTimeout(function () {
-            socket.on("list_back", function(data){
-                codelist = data;
-                alert(data.length);
-                decoding();
-            });
-        }, 2000);
+        // socket.emit("list");
+        // //alert("sleep 2 seconds");
+        // setTimeout(function () {
+        //     socket.on("list_back", function(data){
+        //         codelist = data;
+        //         decoding();
+        //     });
+        // }, 500);
     </script>
 </head>
 
