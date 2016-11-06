@@ -24,7 +24,7 @@ function snapPicture () {
 		//alert(encode);
 		//var target = document.getElementById("textArea");
 		//target.value = makeSmall(imageData);
-		imageurl = imageData;
+		imageurl = "data:image/jpeg;base64,"+imageData;
 		//send_png(imageurl);
 		//alert(smallurl);
 		myNavigator.pushPage("edit.html");
@@ -51,7 +51,6 @@ function decoding(){
 	// document.getElementById("img4").src =  "5";
 	// document.getElementById("img5").src =  "6";
 	modal.hide();
-	//document.getElementById("textArea").value = codelist[0].code;
 }
 
 function makeSmall(data) {
