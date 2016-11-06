@@ -18,16 +18,16 @@ function snapPicture () {
 
 	//A callback function when snapping picture is success.
 	function onSuccess (imageData) {
-		var image = document.getElementById ('picture');
-		image.src = "data:image/jpeg;base64," + imageData;
+		//var image = document.getElementById ('picture');
+		//image.src = "data:image/jpeg;base64," + imageData;
 		//send_png(imageData);
 		//alert(encode);
 		//var target = document.getElementById("textArea");
 		//target.value = makeSmall(imageData);
-		imageurl = makeSmall(imageData);
+		imageurl = imageData;
 		//send_png(imageurl);
 		//alert(smallurl);
-		myNavigator.pushPage("edit.html",{imageurl:imageurl});
+		myNavigator.pushPage("edit.html");
 	}
 
 	//A callback function when snapping picture is fail.
@@ -44,7 +44,13 @@ function decoding(){
 	document.getElementById("img3").src = codelist[3].code;
 	document.getElementById("img4").src = codelist[4].code;
 	document.getElementById("img5").src = codelist[5].code;
-	decode.src = imageurl;
+	// document.getElementById("img0").src =  "1";
+	// document.getElementById("img1").src =  "2";
+	// document.getElementById("img2").src =  "3";
+	// document.getElementById("img3").src =  "4";
+	// document.getElementById("img4").src =  "5";
+	// document.getElementById("img5").src =  "6";
+	modal.hide();
 	//document.getElementById("textArea").value = codelist[0].code;
 }
 

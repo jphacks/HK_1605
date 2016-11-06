@@ -5,7 +5,16 @@
             <div class="center">情報入力</div>
         </ons-toolbar>
         <img src="" id="edit_img" width="180" height="320"><br>
-        科目名<input id="course" textarea="科目名"><br>
+        科目名
+        <select name="科目名" id="course">
+                <option value="">選択してください</option>
+                <option value="0">線形代数学</option>
+                <option value="1">解析学</option>
+                <option value="2">データベース工学</option>
+                <option value="3">ネットワークセキュリティ</option>
+                <option value="4">ハードウェア設計論</option>
+                <option value="5">オペレーティング・システム</option>
+        </select>
 
         <ons-button onclick="emit_note_info()">送信</ons-button>
     </ons-page>
