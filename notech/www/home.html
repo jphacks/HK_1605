@@ -12,15 +12,15 @@
         <table border="0" cellspacing="8">
             <tr height="200">
                 <td width="350">
-                    <ons-button modifier="light" onclick="goto_detail0()"><img id="img0" src="IMG_3057.JPG" width="141" height="188" style="position:relative;left:3px">
+                    <ons-button modifier="light" onclick="goto_detail0()"><img id="img0" src="" width="141" height="188" style="position:relative;left:3px">
                         <FONT color="#000000">
-                            <br>科目名</br>DL数:4748 評価:4.5 </FONT>
+                            <div id="n1"></div>DL数:0</FONT>
                     </ons-button>
                 </td>
                  <td width="190">
                     <ons-button modifier="light" onclick="goto_detail1()"><img id="img1" src="" width="141" height="188" style="position:relative;left:3px">
                         <FONT color="#000000">
-                            </br>科目名</br> DL数 </FONT>
+                            <div id="n2"></div>DL数:389 </FONT>
                     </ons-button>
                 </td>
             </tr>
@@ -28,13 +28,13 @@
                 <td width="350">
                     <ons-button modifier="light" onclick="goto_detail2()"><img id="img2" src="" width="141" height="188" style="position:relative;left:3px">
                         <FONT color="#000000">
-                            <br>科目名</br>DL数:4748 評価:4.5 </FONT>
+                            <div id="n3"></div>DL数:47</FONT>
                     </ons-button>
                 </td>
                  <td width="190">
                     <ons-button modifier="light" onclick="goto_detail3()"><img id="img3" src="" width="141" height="188" style="position:relative;left:3px">
                         <FONT color="#000000">
-                            </br>科目名</br> DL数 </FONT>
+                        <div id="n4"></div>DL数:18 </FONT>
                     </ons-button>
                 </td>
             </tr>
@@ -42,23 +42,19 @@
                 <td width="350">
                     <ons-button modifier="light" onclick="goto_detail4()"><img id="img4" src="" width="141" height="188" style="position:relative;left:3px">
                         <FONT color="#000000">
-                            <br>科目名</br>DL数:4748 評価:4.5 </FONT>
+                            <div id="n5"></div>DL数:47</FONT>
                     </ons-button>
                 </td>
                  <td width="190">
                     <ons-button modifier="light" onclick="goto_detail5()"><img id="img5" src="" width="141" height="188" style="position:relative;left:3px">
                         <FONT color="#000000">
-                            </br>科目名</br> DL数 </FONT>
+                        <div id="n6"></div>DL数:136 </FONT>
                     </ons-button>
                 </td>
             </tr>
         </table>
         <p style="text-align: center; opacity: 0.6; padding-top: 20px;">
-            <input type="button" onclick="snapPicture()" value="Take Pictures"><br><br>
-            <img id="picture" src="" width="90" height="160"><br>
-            <!-- <textarea id="textArea" rows="3" cols="40"></textarea><br> -->
-            <input type="button" value="decode" onclick="decoding()"><br>
-            <img src="" id="decode" width="180" height="320">
+            <ons-button onclick="snapPicture()">写真を撮影する</ons-button><br><br>
         </p>
     </ons-page>
 </ons-navigator>
