@@ -1,13 +1,17 @@
-<ons-page>
+<ons-page id="detail_page">
     <ons-toolbar>
         <div class="left">
             <ons-back-button>戻る</ons-back-button>
         </div>
         <div class="center">解析IIのノート</div>
     </ons-toolbar>
-    <div align="center"> <img src="IMG_3057.JPG" width="200px" height="200px"> </div>
+    <br />
+    <div align="center"> <img id="detail_img" src="" width="210px" height="280px"> </div>
     <font size="5">
-        <div align="center">解析学IIのノートです。<br></div> 評価:DL数:</font>
-    <ons-button modifier="large">買う！</ons-button> <br/>
-    <ons-button modifier="large">試読する！</ons-button>
+        <div align="center">解析学IIのノートです。</div>
+        DL数:</font><br />
+        <br />
+        <div align="center">
+    <ons-button onclick="myNavigator.popPage()">　　　買う！　　　</ons-button> <br/>
+    </div>
 </ons-page>

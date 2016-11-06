@@ -41,17 +41,17 @@
     <script src="js/socket.js"></script>
     <script src="js/edit.js"></script>
     <script src="js/home.js"></script>
+    <script src="js/detail.js"></script>
 
     <script>
-    modal.show();
-    setTimeout('decoding()', 6000);
-        socket.emit("list");
-        //alert("sleep 2 seconds");
-        setTimeout(function () {
-            socket.on("list_back", function(data){
-                codelist = data;
-            });
-        }, 2000);
+    // setTimeout('decoding()', 6000);
+    //     socket.emit("list");
+    //     //alert("sleep 2 seconds");
+    //     setTimeout(function () {
+    //         socket.on("list_back", function(data){
+    //             codelist = data;
+    //         });
+    //     }, 2000);
         //alert("wake up!");
     </script>
 </head>
